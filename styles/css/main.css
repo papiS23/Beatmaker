@@ -30,25 +30,6 @@ i, svg {
           justify-content: center;
 }
 
-.kick-pad, .snare-pad, .hihat-pad {
-  width: 5rem;
-  height: 5rem;
-  margin: 1rem 0.5rem;
-  cursor: pointer;
-}
-
-.kick-pad {
-  background: #a0d3e0;
-}
-
-.snare-pad {
-  background: #e0a0d0;
-}
-
-.hihat-pad {
-  background: #e0c2a0;
-}
-
 .kick-track, .snare-track, .hihat-track {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,9 +44,92 @@ i, svg {
   margin-top: 5rem;
 }
 
+.kick-pad, .snare-pad, .hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: #a0d3e0;
+}
+
+.kick-pad .active {
+  background: #3bc5e7;
+}
+
+.snare-pad {
+  background: #e0a0d0;
+}
+
+.snare-pad .active {
+  background: #da3ab2;
+}
+
+.hihat-pad {
+  background: #e0c2a0;
+}
+
+.hihat-pad .active {
+  background: #f19e40;
+}
+
 .controls, .kick, .snare, .hithat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.controls {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  background: #595959;
+  cursor: pointer;
+  -webkit-transition: aall .5s ease;
+  transition: aall .5s ease;
+}
+
+.controls button:focus {
+  outline: none;
+}
+
+.pad {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: #585858;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.play:focus {
+  outline: none;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
