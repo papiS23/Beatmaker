@@ -18,5 +18,4 @@ class DrumKit {
 }
 
 const drumKit = new DrumKit();
-console.log(drumKit);
 drumKit.start();
