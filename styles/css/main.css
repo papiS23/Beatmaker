@@ -55,7 +55,7 @@ i, svg {
   background: #a0d3e0;
 }
 
-.kick-pad .active {
+.kick-pad.active {
   background: #3bc5e7;
 }
 
@@ -63,7 +63,7 @@ i, svg {
   background: #e0a0d0;
 }
 
-.snare-pad .active {
+.snare-pad.active {
   background: #da3ab2;
 }
 
@@ -71,7 +71,7 @@ i, svg {
   background: #e0c2a0;
 }
 
-.hihat-pad .active {
+.hihat-pad.active {
   background: #f19e40;
 }
 

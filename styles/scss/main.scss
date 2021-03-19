@@ -31,20 +31,20 @@ i,svg{
 }
 .kick-pad{
     background:rgb(160, 211, 224);
-    .active{
+    &.active{
         background: rgb(59, 197, 231);
     }
 }
 
 .snare-pad{
     background:rgb(224, 160, 208);
-    .active{
+    &.active{
         background: rgb(218, 58, 178);
     }
 }
 .hihat-pad{
     background:rgb(224, 194, 160);
-    .active{
+    &.active{
         background: rgb(241, 158, 64);
     }
 }
