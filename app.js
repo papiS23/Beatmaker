@@ -64,7 +64,6 @@ class DrumKit {
     console.log(e);
   }
 }
-
 const drumKit = new DrumKit();
 
 drumKit.pads.forEach((pad) => {
