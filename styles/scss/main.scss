@@ -56,16 +56,19 @@ i,svg{
     align-items: center;
     flex: 1;
     margin: 0rem 2rem;
-    button{
+    .mute{
         padding: 1rem;
         border: none;
         color: white;
         font-size: 1rem;
         background: rgb(89, 89, 89);
         cursor: pointer;
-        transition: aall .5s ease;
+        transition: all .5s ease;
         &:focus{
             outline: none;
+        }
+        &.active{
+            background-color: rgb(180, 180, 180);
         }
 
     }
@@ -89,6 +92,18 @@ select{
     padding: 1rem;
     font-size: 1rem;
 
+}
+.tempo{
+    margin: 3rem;
+    width: 30%;
+}
+.tempo-slider{
+    padding: 1rem;
+    -webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background-color: rgb(88,88,88);
 }
 @keyframes playTrack{
     from{

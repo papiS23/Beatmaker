@@ -94,19 +94,23 @@ i, svg {
   margin: 0rem 2rem;
 }
 
-.controls button {
+.controls .mute {
   padding: 1rem;
   border: none;
   color: white;
   font-size: 1rem;
   background: #595959;
   cursor: pointer;
-  -webkit-transition: aall .5s ease;
-  transition: aall .5s ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-.controls button:focus {
+.controls .mute:focus {
   outline: none;
+}
+
+.controls .mute.active {
+  background-color: #b4b4b4;
 }
 
 .pad {
@@ -131,6 +135,20 @@ i, svg {
 select {
   padding: 1rem;
   font-size: 1rem;
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo-slider {
+  padding: 1rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background-color: #585858;
 }
 
 @-webkit-keyframes playTrack {
