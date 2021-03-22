@@ -94,6 +94,10 @@ i, svg {
   margin: 0rem 2rem;
 }
 
+.controls h1 {
+  width: 10%;
+}
+
 .controls .mute {
   padding: 1rem;
   border: none;
@@ -135,6 +139,7 @@ i, svg {
 select {
   padding: 1rem;
   font-size: 1rem;
+  width: 25%;
 }
 
 .tempo {
@@ -142,12 +147,25 @@ select {
   width: 30%;
 }
 
+.tempo p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
 .tempo-slider {
-  padding: 1rem;
+  padding: 0.2rem;
+  -webkit-appearance: none;
   margin: 1rem 0rem;
   width: 100%;
   position: relative;
   background-color: #585858;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.tempo-slider:focus {
+  outline: none;
 }
 
 @-webkit-keyframes playTrack {

@@ -56,6 +56,9 @@ i,svg{
     align-items: center;
     flex: 1;
     margin: 0rem 2rem;
+    h1{
+        width: 10%;
+    }
     .mute{
         padding: 1rem;
         border: none;
@@ -91,20 +94,32 @@ i,svg{
 select{
     padding: 1rem;
     font-size: 1rem;
-
+    width: 25%;
 }
 .tempo{
     margin: 3rem;
     width: 30%;
+    p{
+        font-size: 1.5rem;
+        margin: 2rem;
+        text-align: center;
+    }
 }
 .tempo-slider{
-    padding: 1rem;
-    // -webkit-appearance: none;
+    padding: 0.2rem;
+    -webkit-appearance: none;
     margin: 1rem 0rem;
     width: 100%;
     position: relative;
     background-color: rgb(88,88,88);
+    cursor: pointer;
+    border-radius: 1rem;
+    &:focus{
+        outline: none;
+    }
+    
 }
+
 @keyframes playTrack{
     from{
         transform: scale(1);
